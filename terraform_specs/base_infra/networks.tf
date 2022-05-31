@@ -1,7 +1,7 @@
 resource "yandex_vpc_network" "network" {
   name = "app-network"
 }
- 
+
 variable "zones" {
   type = set(string)
 }

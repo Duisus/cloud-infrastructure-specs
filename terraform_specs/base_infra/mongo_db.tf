@@ -1,8 +1,8 @@
 variable "db_info" {
   type = object({
-    db_name = string
+    db_name   = string
     user_name = string
-    password = string
+    password  = string
   })
 }
 
