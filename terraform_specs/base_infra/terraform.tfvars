@@ -13,3 +13,5 @@ db_info = {
 }
 
 primary_host_zone = "ru-central1-a"
+
+bucket_name = "<имя бакета>"
