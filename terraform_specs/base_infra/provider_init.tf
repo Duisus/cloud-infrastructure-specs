@@ -6,7 +6,7 @@ terraform {
   }
 }
 
-variable "init_provider_info" {
+variable "provider_init_info" {
   type = object({
     auth_token = string
     cloud_id   = string
@@ -15,8 +15,8 @@ variable "init_provider_info" {
 }
 
 provider "yandex" {
-  token     = var.init_provider_info.auth_token
-  cloud_id  = var.init_provider_info.cloud_id
-  folder_id = var.init_provider_info.folder_id
+  token     = var.provider_init_info.auth_token
+  cloud_id  = var.provider_init_info.cloud_id
+  folder_id = var.provider_init_info.folder_id
   zone      = "ru-central1-a"
 }
