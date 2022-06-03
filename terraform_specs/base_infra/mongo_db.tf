@@ -28,6 +28,7 @@ resource "yandex_mdb_mongodb_cluster" "mongodb" {
     password = var.db_info.password
     permission {
       database_name = var.db_info.db_name
+      roles         = ["readWrite"]
     }
   }
 
