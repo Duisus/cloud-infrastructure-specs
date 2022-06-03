@@ -32,7 +32,7 @@ resource "yandex_mdb_mongodb_cluster" "mongodb" {
   }
 
   resources {
-    resource_preset_id = "b1.nano"
+    resource_preset_id = "s2.micro"
     disk_size          = 16
     disk_type_id       = "network-hdd"
   }

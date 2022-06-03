@@ -4,7 +4,11 @@ provider_init_info = {
   folder_id  = "<id каталога>"
 }
 
-zones = ["ru-central1-a", "ru-central1-b", "ru-central1-c"]
+zones_and_cidr_blocks = {
+  "ru-central1-a" = "10.2.0.0/16"
+  "ru-central1-b" = "10.3.0.0/16"
+  "ru-central1-c" = "10.4.0.0/16"
+}
 
 db_info = {
   db_name   = "<имя БД>"
