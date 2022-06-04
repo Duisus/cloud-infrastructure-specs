@@ -5,3 +5,5 @@ provider_init_info = {
 }
 
 image_url = "<URL Docker-образа>"
+
+service_account_id = "<id сервисного аккаунта>"
