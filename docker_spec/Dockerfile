@@ -8,5 +8,7 @@ COPY YandexInternalRootCA.crt ./
 RUN npm install
 COPY . .
 
-EXPOSE 8080
+ENV NODE_ENV=production
+
+EXPOSE 80
 CMD [ "node", "server/app.js" ]
